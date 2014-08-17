@@ -1,2 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jin">
+      <UniqueIdentifier>{4961b5d8-b756-4b22-925a-f2cad61381ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jin\win">
+      <UniqueIdentifier>{d4264ec7-d67a-4fbf-891d-7da896f011e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\jin\win\Process.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jin\win\PathPicker.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\jin\win\Process.cpp">
+      <Filter>jin\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jin\dummy_for_checking_compile_error.cpp">
+      <Filter>jin</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
