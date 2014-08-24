@@ -6,7 +6,7 @@ namespace jin
 {
     namespace PathUtils
     {
-        inline void NestSpacedPathInpace(std::wstring& path)
+        inline void NestSpacedPathInplace(std::wstring& path)
         {
             if (path.empty()) { return; }
             if (path[0] == L'\"') { return; }
@@ -22,7 +22,7 @@ namespace jin
         inline std::wstring NestSpacedPath(const std::wstring& path)
         {
             std::wstring ret = path;
-            NestSpacedPathInpace(ret);
+            NestSpacedPathInplace(ret);
             return ret;
         }
     }
