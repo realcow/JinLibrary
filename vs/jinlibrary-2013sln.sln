@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test.vcxproj", "{A7
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jinlibrary-static", "jinlibrary-static.vcxproj", "{5AD417CA-40D8-4A12-990B-9B8562EF4E57}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "third-party-static", "third-party-static.vcxproj", "{FAAE3761-9AB1-4DCE-8881-DA1A6A9948A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{5AD417CA-40D8-4A12-990B-9B8562EF4E57}.Debug|Win32.Build.0 = Debug|Win32
 		{5AD417CA-40D8-4A12-990B-9B8562EF4E57}.Release|Win32.ActiveCfg = Release|Win32
 		{5AD417CA-40D8-4A12-990B-9B8562EF4E57}.Release|Win32.Build.0 = Release|Win32
+		{FAAE3761-9AB1-4DCE-8881-DA1A6A9948A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FAAE3761-9AB1-4DCE-8881-DA1A6A9948A3}.Debug|Win32.Build.0 = Debug|Win32
+		{FAAE3761-9AB1-4DCE-8881-DA1A6A9948A3}.Release|Win32.ActiveCfg = Release|Win32
+		{FAAE3761-9AB1-4DCE-8881-DA1A6A9948A3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

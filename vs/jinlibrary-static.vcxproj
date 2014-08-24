@@ -12,12 +12,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\jin\PathUtils.h" />
+    <ClInclude Include="..\jin\win\CommonDef.h" />
+    <ClInclude Include="..\jin\win\IOCommProcess.h" />
     <ClInclude Include="..\jin\win\PathPicker.h" />
     <ClInclude Include="..\jin\win\Process.h" />
+    <ClInclude Include="..\jin\win\StartupRegister.h" />
+    <ClInclude Include="..\jin\win\string_cast.h" />
+    <ClInclude Include="..\jin\win\WindowsHandleWrapper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\jin\dummy_for_checking_compile_error.cpp" />
+    <ClCompile Include="..\jin\win\IOCommProcess.cpp" />
     <ClCompile Include="..\jin\win\Process.cpp" />
+    <ClCompile Include="..\jin\win\StartupRegister.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="third-party-static.vcxproj">
+      <Project>{faae3761-9ab1-4dce-8881-da1a6a9948a3}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5AD417CA-40D8-4A12-990B-9B8562EF4E57}</ProjectGuid>

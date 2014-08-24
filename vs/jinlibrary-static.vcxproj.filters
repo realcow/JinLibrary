@@ -18,6 +18,21 @@
     <ClInclude Include="..\jin\PathUtils.h">
       <Filter>jin</Filter>
     </ClInclude>
+    <ClInclude Include="..\jin\win\StartupRegister.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jin\win\WindowsHandleWrapper.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jin\win\CommonDef.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jin\win\IOCommProcess.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\jin\win\string_cast.h">
+      <Filter>jin\win</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\jin\win\Process.cpp">
@@ -25,6 +40,12 @@
     </ClCompile>
     <ClCompile Include="..\jin\dummy_for_checking_compile_error.cpp">
       <Filter>jin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jin\win\StartupRegister.cpp">
+      <Filter>jin\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jin\win\IOCommProcess.cpp">
+      <Filter>jin\win</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
