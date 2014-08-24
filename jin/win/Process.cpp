@@ -1,4 +1,7 @@
 #include "Process.h"
+#include <jin/PathUtils.h>
+#include <shlwapi.h>
+#pragma comment( lib, "shlwapi.lib" )
 
 using namespace std;
 
@@ -28,16 +31,25 @@ Process::~Process()
 */
 bool Process::Start()
 {
-    STARTUPINFO si;  
+    if (::PathFileExistsW(StartInfo.FileName.c_str()) == FALSE)
+    {
+        return false;
+    }
+    STARTUPINFO si;
 
     ZeroMemory(&si, sizeof(si));
     si.cb = sizeof(si);
 
-    wstring commandLine = StartInfo.FileName + L" " + StartInfo.Arguments;
+    wstring commandLine = StartInfo.FileName;
+    
+    if (!StartInfo.Arguments.empty())
+    {
+        commandLine += L" " + StartInfo.Arguments;
+    }
 
     // Start the child process.   
     if (!::CreateProcess(nullptr,                                    // No module name (use command line)  
-                         const_cast<WCHAR*>(commandLine.data()),    // Command line  
+                         const_cast<WCHAR*>(commandLine.data()),     // Command line  
                          nullptr,                                    // Process handle not inheritable  
                          nullptr,                                    // Thread handle not inheritable  
                          FALSE,                                      // Set handle inheritance to FALSE  
