@@ -15,6 +15,9 @@
     <ClCompile Include="..\jin\win\ProcessTest.cpp">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="..\jin\PathUtilsTest.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\test\data\test-text.txt">

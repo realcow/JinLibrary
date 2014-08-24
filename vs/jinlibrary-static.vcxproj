@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\jin\PathUtils.h" />
     <ClInclude Include="..\jin\win\PathPicker.h" />
     <ClInclude Include="..\jin\win\Process.h" />
   </ItemGroup>

@@ -15,6 +15,9 @@
     <ClInclude Include="..\jin\win\PathPicker.h">
       <Filter>jin\win</Filter>
     </ClInclude>
+    <ClInclude Include="..\jin\PathUtils.h">
+      <Filter>jin</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\jin\win\Process.cpp">

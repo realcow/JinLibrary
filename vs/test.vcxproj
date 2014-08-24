@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\jin\PathUtilsTest.cpp" />
     <ClCompile Include="..\jin\win\ProcessTest.cpp" />
     <ClCompile Include="..\test\main.cpp" />
   </ItemGroup>
