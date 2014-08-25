@@ -93,7 +93,7 @@ namespace jin { namespace win
             return Status::Success;
         }
 
-        Status unregisterToTaskScheduler(const std::wstring& taskname)
+        Status deregisterFromTaskScheduler(const std::wstring& taskname)
         {
             wstring taskSchedulerPath = getTaskSchedulerPath();
 
@@ -155,7 +155,7 @@ namespace jin { namespace win
             return TRUE;
         }
 
-        BOOL unregisterToRunRegistry(const std::wstring& valueName)
+        BOOL deregisterFromRunRegistry(const std::wstring& valueName)
         {
             regkey runkey = getRunRegistryKey();
             if (ERROR_SUCCESS == ::RegDeleteValue(runkey.get(), valueName.c_str()))

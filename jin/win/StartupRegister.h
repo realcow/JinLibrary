@@ -29,17 +29,17 @@ namespace jin
 
             Status registerToRunRegistry(const std::wstring& valueName, const std::wstring& exePath);
 
-            BOOL unregisterToRunRegistry(const std::wstring& valueName);
+            BOOL deregisterFromRunRegistry(const std::wstring& valueName);
 
             /// @name   Task Scheduler 등록 방식
             Status isRegisteredToTaskScheduler(const std::wstring& taskname, const std::wstring& exePath);
 
             Status registerToTaskScheduler(const std::wstring& taskname, const std::wstring& exePath);
 
-            Status unregisterToTaskScheduler(const std::wstring& taskname);
+            Status deregisterFromTaskScheduler(const std::wstring& taskname);
 
             /// @name   시작 프로그램 등록 방식
-            Status registerByStartProgram();
+            Status registerToStartProgram();
         };
     }
 }
