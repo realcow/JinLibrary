@@ -13,4 +13,9 @@ TEST(SortedLinearSetTest, Basic)
 
     EXPECT_EQ(1, s.count("apple"));
     EXPECT_EQ(0, s.count("melon"));
+
+    s.insert("apple");
+    s.insert("mango");
+    s.insert("banana");
+    EXPECT_EQ(3, s.size());
 }
