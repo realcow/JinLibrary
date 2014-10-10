@@ -7,6 +7,12 @@
     <Filter Include="test\data">
       <UniqueIdentifier>{9150cde2-e98c-4eba-a12c-c837307505f4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="test\base">
+      <UniqueIdentifier>{e717a8d5-2960-4c3a-a36f-d7a4c094bec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gtest">
+      <UniqueIdentifier>{b723604b-ad79-4164-b5f8-8b8562ab8dc6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\test\main.cpp">
@@ -17,6 +23,12 @@
     </ClCompile>
     <ClCompile Include="..\jin\PathUtilsTest.cpp">
       <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\jin\base\SortedLinearSetTest.cpp">
+      <Filter>test\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third-party\gtest\src\gtest-all.cc">
+      <Filter>gtest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

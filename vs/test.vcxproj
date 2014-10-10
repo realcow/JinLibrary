@@ -36,11 +36,13 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="Includes JinLibrary.props" />
     <Import Project="Boost Libraries.props" />
+    <Import Project="..\third-party\gtest\GoogleTest.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="Includes JinLibrary.props" />
     <Import Project="Boost Libraries.props" />
+    <Import Project="..\third-party\gtest\GoogleTest.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -80,9 +82,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\jin\base\SortedLinearSetTest.cpp" />
     <ClCompile Include="..\jin\PathUtilsTest.cpp" />
     <ClCompile Include="..\jin\win\ProcessTest.cpp" />
     <ClCompile Include="..\test\main.cpp" />
+    <ClCompile Include="..\third-party\gtest\src\gtest-all.cc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="jinlibrary-static.vcxproj">

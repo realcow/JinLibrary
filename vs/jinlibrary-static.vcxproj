@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\jin\base\SortedLinearSet.h" />
     <ClInclude Include="..\jin\PathUtils.h" />
     <ClInclude Include="..\jin\win\CommonDef.h" />
     <ClInclude Include="..\jin\win\IOCommProcess.h" />

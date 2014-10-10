@@ -4,9 +4,6 @@
     <Filter Include="TinyXml">
       <UniqueIdentifier>{bc84c61c-94e4-484d-9dcc-6c0c241de2b1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="gtest">
-      <UniqueIdentifier>{747cca54-0059-4837-86c5-1aa336a14a9a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\third-party\tinyxml\tinystr.cpp">
